@@ -1,0 +1,13 @@
+# dsh-vision-bridge bundle patch: insert the auto-describe bridge service row.
+# Configure through the row's `config` (overrides environment):
+#
+# - id: dsh-vision-bridge
+#   name: 'dsh-vision-bridge'
+#   config:
+#     apiKey: 'sk-...'          # or env VISION_API_KEY
+#     baseURL: 'https://...'    # OpenAI-compatible endpoint, or env VISION_BASE_URL
+#     model: 'qwen-vl-max'      # or env VISION_MODEL
+#     lang: zh
+- insert:
+    - id: dsh-vision-bridge
+      name: 'dsh-vision-bridge'
